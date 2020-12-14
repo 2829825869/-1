@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+	
+	<title>Arto | Underconstruction Portfolio Template</title>
+	
+    <!-- This file is part of a site template for sale at mojo-themes.com.
+         See: www.mojo-themes.com/user/dkcreatives/
+         Copyright 2012 Dilip Kumar -->
+
+    <!-- FAVICON-->
+	<link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <!-- CSS-->
+	<link rel="stylesheet" href="./css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="./css/prettyphoto.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<!--MAIN WRAP START-->
+<div id="cover">
+	<!--Left Content Wrap Start-->
+	<div class="main-wrap">
+		<!--logo section-->
+		<div class="logo-wrap">
+			<div class="logo">
+				<a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+			</div>
+		</div>
+		<!--logo section-->
+		<div class="clear"></div>
+		<!--social section-->
+			<div class="social-wrap">
+				<ul class="social-networks">
+					<li class="icon-twitter"><a href="#">Twitter</a></li>
+					<li class="icon-facebook"><a href="#">Facebook</a></li>
+					<li class="icon-dribbble"><a href="#">Dribbble</a></li>
+					<li class="icon-skype"><a href="#">Forrst</a></li>
+					<li class="icon-gplus"><a href="#">Forrst</a></li>
+					<li class="icon-rss"><a href="#">Rss</a></li>
+				</ul>
+			</div>
+		<!--social section-->
+		<div class="clear"></div>
+		<!--Welcome Content Start-->
+		<div class="welcome-content">
+			<h3 class="welcome-title">We are currently
+			<span class="highlight">on the way to launch.</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et urna id leo porttitor lobortis.</p>
+		</div>
+		<!--Welcome Content End-->
+		<div class="clear"></div>
+		<div class="border"></div>
+		<!--Countdown Content Start-->
+		<div class="countdown-wrap">
+			<div id="countdown-timer">
+				<div class="block"><span id="weeks"></span>WEEKS</div>
+					<div class="space">&nbsp;</div>
+				<div class="block"><span id="daysLeft"></span>DAYS</div>
+					<div class="space">&nbsp;</div>
+				<div class="block"><span id="hours"></span>HOURS</div>
+					<div class="space">&nbsp;</div>
+				<div class="block"><span id="minutes"></span>MINUTES</div>
+					<div class="space">&nbsp;</div>
+				<div class="block"><span id="seconds"></span>SECONDS</div>
+			</div>
+		</div>
+		<!--Countdown Content End-->
+		<div class="border"></div>
+		<div class="clear"></div>
+		<!--Footer Copyright Content Start-->
+		<div class="footer-bottom">
+			<div class="copyright">
+				<p>Copyright 2012. <a href="#">Arto</a></p>
+			</div>
+		</div>
+		<!--Footer Copyright Content End-->
+	</div>
+	<!--Left Content Wrap End-->
+	<!--Right Content Wrap Start-->
+	<div id="folio-wrap">
+		<img src="./images/1-big.jpg" height="460" width="810" alt="" />
+		<div class="folio-content-full">
+			<h1> Beautiful Image sample content</h1>
+			<span class="meta-tag-content">Image , Logo , Design</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis odio quis dui pretium eleifend et nec mauris. Suspendisse at purus vel ligula ornare adipiscing. Aliquam et suscipit lorem. Pellentesque auctor tincidunt mauris ac pretium. Donec iaculis, dolor ac tempor rutrum, ligula augue fringilla ipsum, a dictum mauris justo.</p>
+		</div>
+	</div>
+</div>
+<!--Right Content Wrap End-->
+<!--MAIN WRAP END-->
+    <!-- //SCRIPTS -->
+	<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="./js/jquery.prettyphoto.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+		
+	<script type="text/javascript">
+		$(function() {
+			$('div#countdown-timer').countdown("2013/12/16" , function(event) {
+			var $this = $(this);
+			switch(event.type) {
+			case "seconds":
+			case "minutes":
+			case "hours":
+			case "days":
+			case "weeks":
+			case "daysLeft":
+			$this.find('span#'+event.type).html(event.value);
+			break;
+			case "finished":
+			$this.hide();
+			break;
+			}
+			});
+		});
+	</script>
+</body>
+</html>
